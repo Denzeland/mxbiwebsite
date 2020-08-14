@@ -1,8 +1,8 @@
-- name: User Guide
+- name: 用户指南
   slug: user-guide
-- name: Data Sources
+- name: 连接数据源
   slug: data-sources
-- name: FAQ
+- name: 相关问题
   slug: faq
-- name: Open Source & Self Hosted
+- name: 开源 & 自托管
   slug: open-source

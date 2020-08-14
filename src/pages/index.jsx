@@ -27,22 +27,22 @@ class Homepage extends React.Component {
   render() {
     return (
       <Layout
-        title="Redash helps you make sense of your data"
+        title="木星BI平台帮助您理解您的数据"
         description="Use Redash to connect to any data source (PostgreSQL, MySQL, Redshift, BigQuery, MongoDB and many others), query, visualize and share your data to make your company data driven."
         location={this.props.location}
       >
         <section className="section section__databricks">
           <div className="container">
             <img src="/assets/images/databricks-redash.png"/>
-            <h1>Redash has joined Databricks</h1>
+            <h1>木星BI平台加入了Databricks</h1>
             <Link
               data-track
               data-track-location="databricks"
               track-event="Clicked Learn More about Databricks"
-              to="https://blog.redash.io/redash-joins-databricks/"
+              to="#"
               className="btn btn-primary btn-lg"
             >
-              Learn More
+              了解更多
             </Link>
           </div>
         </section>
@@ -51,11 +51,10 @@ class Homepage extends React.Component {
             <div className="row">
               <div className="col-md-5">
                 <h1 className="mb-xs">
-                  Redash helps you make sense of your data
+                木星BI平台帮助您理解您的数据
                 </h1>
                 <h3 className="font-light">
-                  Connect and query your data sources, build dashboards to
-                  visualize data and share them with your company.
+                连接和查询您的数据源，构建仪表板以可视化数据并与您的公司共享它们。
                 </h3>
                 {/* <Link
                   data-track
@@ -93,7 +92,7 @@ class Homepage extends React.Component {
                       src="/assets/images/elements/redash-intro-720.webm"
                       type="video/webm"
                     />
-                    Your browser does not support the video tag.
+                    您的浏览器不支持播放视频，请升级您的浏览器
                   </video>
                 </div>
               </div>
@@ -113,17 +112,16 @@ class Homepage extends React.Component {
                   className="visible-xs"
                 />
 
-                <h2>Write queries effectively</h2>
+                <h2>编写有效的查询</h2>
 
                 <p className="highlight-p">
-                  Enjoy the power and comfort of a SQL client with the
-                  collaborative advantages of a cloud based service.
+                利用基于云的服务的协作优势享受SQL客户机的强大和舒适。
                 </p>
 
                 <ul className="highlight-ul">
-                  <li>Powerful online SQL editor</li>
-                  <li>Browse schema and click-to-insert</li>
-                  <li>Create snippets and reuse them</li>
+                  <li>强大的在线SQL编辑器</li>
+                  <li>浏览模式并单击插入</li>
+                  <li>创建代码片段并重用它们</li>
                 </ul>
               </div>
               <div className="col-sm-6 hidden-xs">
@@ -146,17 +144,16 @@ class Homepage extends React.Component {
                 />
               </div>
               <div className="col-sm-6">
-                <h2>Visualize your data on dashboards</h2>
+                <h2>在仪表板上可视化您的数据</h2>
 
                 <p className="highlight-p">
-                  Always see the big, easy to digest picture for deeper
-                  understanding and better decision making.
+                总是看到大的，容易消化的图片，以便更深入的理解和更好的决策。
                 </p>
 
                 <ul className="highlight-ul">
-                  <li>Drag & Drop and resize any visualization</li>
-                  <li>Schedule refresh from your data sources</li>
-                  <li>Share dashboards with your team or with the public</li>
+                  <li>拖放和调整任何可视化</li>
+                  <li>定期从数据源刷新</li>
+                  <li>与您的团队或公众共享仪表板</li>
                 </ul>
               </div>
             </div>
@@ -180,7 +177,7 @@ class Homepage extends React.Component {
                     src="/assets/images/elements/icon-alerts.png"
                     width="64px"
                   />
-                  <h4>Alerts</h4>
+                  <h4>通知</h4>
                 </div>
 
                 <div className="feature-container">
@@ -188,7 +185,7 @@ class Homepage extends React.Component {
                     src="/assets/images/elements/icon-user-management.png"
                     width="64px"
                   />
-                  <h4>User Management</h4>
+                  <h4>用户管理</h4>
                 </div>
               </div>
             </div>
@@ -202,7 +199,7 @@ class Homepage extends React.Component {
                   to="/product"
                   className="btn btn-secondary"
                 >
-                  All Redash Features
+                  所有的木星BI特性
                 </Link>
               </div>
             </div>
@@ -220,19 +217,18 @@ class Homepage extends React.Component {
                   id="open-source-illustrated"
                   className="visible-xs"
                 />
-                <h2>Redash is a popular Open Source project</h2>
+                <h2>木星BI平台是一个流行的开源项目</h2>
                 <p className="highlight-p">
-                  Customize and add features, no lock-in, contribute back to the
-                  community
+                定制和添加特性，没有锁定，回馈社区
                 </p>
                 <Link
                   data-track
                   data-track-location="open-source"
                   track-event="Clicked Community"
-                  to="/community/"
+                  to="#"
                   className="btn btn-secondary"
                 >
-                  Our Community
+                  我们的社区
                 </Link>
               </div>
 

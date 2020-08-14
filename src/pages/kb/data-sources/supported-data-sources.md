@@ -2,6 +2,7 @@
 category: querying
 parent_category: data-sources
 helpscout_url: https://help.redash.io/article/119-supported-data-sources
+permalink: /help/open-source/supported-data-sources
 title: Supported Data Sources
 slug: supported-data-sources
 order: 1

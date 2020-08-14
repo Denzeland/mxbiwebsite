@@ -7,16 +7,16 @@ const GetStarted = () => (
       <div className="row get-started--signup text-center">
         <div className="col-sm-12 p-0">
           <h3 className="mb-xs">
-            Get started with Redash and build a more data-driven future
+          从木星BI平台开始，构建一个数据驱动的未来
           </h3>
           <Link
             data-track
             data-track-location="get-started"
             data-track-event="Clicked Get Started"
-            to="https://app.redash.io/signup"
+            to="#"
             className="btn btn-lg btn-primary"
           >
-            Sign Up Free
+            免费注册
           </Link>
         </div>
       </div>

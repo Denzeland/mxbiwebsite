@@ -123,7 +123,7 @@ class HelpPageTemplate extends React.Component {
           <div className="container">
             <ol className="breadcrumb">
               <li>
-                <Link to="/help">Home</Link>
+                <Link to="/help">文档首页</Link>
               </li>{' '}
               <li>{Section && Section.name}</li>{' '}
               {frontmatter.layout !== 'kb-category' && (
@@ -150,7 +150,7 @@ class HelpPageTemplate extends React.Component {
                     <input
                       className="form-control input-lg form-control--white search-box"
                       type="text"
-                      placeholder="Search for..."
+                      placeholder="搜索文档..."
                       value={this.state.searchQuery}
                       onChange={this.search}
                       onKeyUp={this.handleKeyUp}
@@ -210,7 +210,7 @@ class HelpPageTemplate extends React.Component {
                       }}
                     />
                     <hr />
-                    <p className="edit-on-github">
+                    {/* <p className="edit-on-github">
                       <small>
                         <Link
                           to={`https://github.com/getredash/website/edit/master/src/pages/${
@@ -221,7 +221,7 @@ class HelpPageTemplate extends React.Component {
                           Edit on GitHub
                         </Link>
                       </small>
-                    </p>
+                    </p> */}
                   </div>
                 </div>
               )}

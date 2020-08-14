@@ -84,7 +84,7 @@
     "server": "gatsby serve",
     "clean": "gatsby clean",
     "build": "gatsby build && cp _redirects public/",
-    "develop": "gatsby develop",
+    "develop": "gatsby clean && gatsby develop",
     "format": "prettier --write \"**/*.+(js|json|md)\"",
     "lint": "eslint --ext .js,.jsx --ignore-pattern public .",
     "lint:text": "textlint src/pages/**/index.md",

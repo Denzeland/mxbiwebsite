@@ -30,7 +30,7 @@ export default function DataSourcePageTemplate({
                 className="from-to-holder__logo"
                 alt=""
               />
-              <p className="from-to-holder__title">Redash</p>
+              <p className="from-to-holder__title">木星BI平台</p>
             </div>
           </div>
 

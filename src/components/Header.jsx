@@ -58,12 +58,12 @@ class Header extends React.Component {
             <ul className="nav navbar-nav navbar-left">
               <li>
                 <Link data-track data-track-location="header" to="/product/">
-                  Product
+                  我们的产品
                 </Link>
               </li>
               <li>
                 <Link data-track data-track-location="header" to="/customers/">
-                  Customers
+                  我们的客户
                 </Link>
               </li>
               <li>
@@ -72,20 +72,25 @@ class Header extends React.Component {
                   data-track-location="header"
                   to="/case-studies/"
                 >
-                  Case Studies
+                  案例学习
                 </Link>
               </li>
-              <li>
+              {/* <li>
                 <Link data-track data-track-location="header" to="/community/">
                   Community
                 </Link>
-              </li>
+              </li> */}
               <li>
                 <Link data-track data-track-location="header" to="/pricing/">
-                  Pricing
+                  产品定价
                 </Link>
               </li>
-              <li
+              <li>
+                <Link data-track data-track-location="header" to="/help/">
+                知识文档
+                </Link>
+              </li>
+              {/* <li
                 className={`dropdown ${this.state.dropdownOpen ? 'open' : ''}`}
               >
                 <a
@@ -97,11 +102,11 @@ class Header extends React.Component {
                   aria-expanded={this.dropdownOpen}
                   onClick={this.toggleDropdown}
                 >
-                  Help <span className="caret" />
+                  帮助 <span className="caret" />
                 </a>
                 <ul className="dropdown-menu">
                   <li>
-                    <Link to="/help/">Knowledge Base</Link>
+                    <Link to="/help/">知识文档</Link>
                   </li>
                   <li>
                     <Link to="https://discuss.redash.io/" target="_blank">
@@ -109,7 +114,7 @@ class Header extends React.Component {
                     </Link>
                   </li>
                 </ul>
-              </li>
+              </li> */}
             </ul>
 
             <ul className="nav navbar-nav navbar-right">
@@ -117,9 +122,9 @@ class Header extends React.Component {
                 <Link
                   data-track
                   data-track-location="header"
-                  to="https://app.redash.io/"
+                  to="#"
                 >
-                  Login
+                  登录
                 </Link>
               </li>
               <li>
@@ -127,10 +132,10 @@ class Header extends React.Component {
                   data-track
                   data-track-location="header"
                   track-event="Clicked Get Started"
-                  to="https://app.redash.io/signup"
+                  to="#"
                   className="btn btn-primary navbar-btn"
                 >
-                  Get Started
+                  开始使用
                 </Link>
               </li>
             </ul>

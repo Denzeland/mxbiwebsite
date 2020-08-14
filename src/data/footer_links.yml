@@ -1,32 +1,32 @@
-- name: Redash
+- name: 木星BI平台
   links:
-    - name: Product
+    - name: 产品
       url: /product/
-    - name: Integrations
+    - name: 生态集成
       url: /integrations/
-    - name: Slack Bot
+    - name: Slack机器人
       url: /slack
-    - name: Customers
+    - name: 我们的客户
       url: /customers/
-    - name: Case Studies
+    - name: 案例学习
       url: /case-studies/
-    - name: Pricing
+    - name: 产品定价
       url: /pricing/
-- name: Company
+- name: 我们的团队
   links:
-    - name: About
+    - name: 关于
       url: /about/
-    - name: Blog
+    - name: 博客
       url: https://blog.redash.io/
-    - name: Newsletter
+    - name: 新闻
       url: https://www.getrevue.co/profile/redash
-    - name: Community
-      url: /community/
-    - name: Contact
+    # - name: Community
+    #   url: /community/
+    - name: 联系我们
       url: /contact/
-- name: Help
+- name: 帮助
   links:
-    - name: Knowledge Base
+    - name: 知识文档
       url: /help/
-    - name: Forum
-      url: https://discuss.redash.io/
+    # - name: Forum
+    #   url: https://discuss.redash.io/

@@ -43,10 +43,10 @@ class HelpPage extends React.Component {
     } = this.props
 
     return (
-      <Layout title="Make Your Company Data Driven" location={location}>
+      <Layout title="数据驱动你的公司发展" location={location}>
         <section className="section bg-mutted">
           <div className="container">
-            <h1 className="text-center">Knowledge Base</h1>
+            <h1 className="text-center">用户指南/文档</h1>
             <div className="row">
               <div className="col-sm-8 col-sm-offset-2">
                 <form action="" onSubmit={e => e.preventDefault()}>
@@ -54,7 +54,7 @@ class HelpPage extends React.Component {
                     <input
                       className="form-control input-lg form-control--white search-box"
                       type="text"
-                      placeholder="Search for..."
+                      placeholder="搜索文档..."
                       value={this.state.searchQuery}
                       onChange={this.search}
                       onKeyUp={this.handleKeyUp}

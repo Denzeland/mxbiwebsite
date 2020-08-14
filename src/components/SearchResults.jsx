@@ -30,15 +30,14 @@ const SearchResults = ({ hits }) => (
     {hits.length === 0 && (
       <div className="hits-rest">
         <p>
-          Didn't find what you're looking for? Try checking our{' '}
-          <Link to="https://discuss.redash.io/" target="_blank">
-            forum
+        没找到你要找的东西吗？可以尝试查找我们的{' '}
+          <Link to="#" target="_blank">
+          论坛
           </Link>
           .
         </p>
         <p>
-          If you're a hosted Redash user or have a support contract, you can
-          also contact support.
+          如果你有其他问题，也可以联系我们的木星BI开发团队
         </p>
       </div>
     )}
