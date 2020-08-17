@@ -1,5 +1,5 @@
 ---
-title: Troubleshooting
+title: 故障排除
 permalink: /help/faq/troubleshooting
 parent_category: faq
 category: troubleshooting

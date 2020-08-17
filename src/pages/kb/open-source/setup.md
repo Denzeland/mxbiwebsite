@@ -1,7 +1,7 @@
 ---
 category: setup
 parent_category: open-source
-title: Setting up a Redash Instance
+title: 设置木星BI平台实例
 toc: true
 layout: kb-category
 order: 1

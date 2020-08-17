@@ -1,5 +1,5 @@
 ---
-title: Integrations and API
+title: 集成和API
 permalink: /help/user-guide/integrations-and-api
 parent_category: user-guide
 category: integrations-and-api

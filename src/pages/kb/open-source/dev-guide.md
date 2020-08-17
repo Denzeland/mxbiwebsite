@@ -1,7 +1,7 @@
 ---
 category: dev-guide
 parent_category: open-source
-title: Developer Guide
+title: 开发者指南
 layout: kb-category
 permalink: /help/open-source/dev-guide
 order: 3

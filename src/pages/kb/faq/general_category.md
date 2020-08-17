@@ -1,5 +1,5 @@
 ---
-title: General
+title: 一般问题
 permalink: /help/faq/general
 parent_category: faq
 category: general

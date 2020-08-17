@@ -1,5 +1,5 @@
 ---
-title: Hosted Redash
+title: 托管木星BI平台
 permalink: /help/faq/hosted-redash
 parent_category: faq
 category: hosted-redash

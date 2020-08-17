@@ -1,5 +1,5 @@
 ---
-title: Dashboards
+title: 仪表板
 permalink: /help/user-guide/dashboards
 parent_category: user-guide
 category: dashboards
