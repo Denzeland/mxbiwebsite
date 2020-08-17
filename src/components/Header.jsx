@@ -41,7 +41,7 @@ class Header extends React.Component {
             </button>
             <Link className="navbar-brand" to="/">
               <img
-                src="/assets/images/elements/redash-logo.svg"
+                src="/assets/images/redash-logo.png"
                 className="navbar-brand__img"
                 alt=""
               />

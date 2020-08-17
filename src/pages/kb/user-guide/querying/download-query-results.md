@@ -2,7 +2,7 @@
 category: querying
 parent_category: user-guide
 helpscout_url: https://help.redash.io/article/43-download-query-results
-title: How To Download / Export Query Results
+title: 如何下载 / 导出查询结果
 slug: download-query-results
 ---
 

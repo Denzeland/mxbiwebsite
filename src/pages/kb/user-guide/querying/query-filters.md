@@ -2,7 +2,7 @@
 category: querying
 parent_category: user-guide
 helpscout_url: https://help.redash.io/article/45-query-filters
-title: Query Filters
+title: 查询过滤
 slug: query-filters
 ---
 

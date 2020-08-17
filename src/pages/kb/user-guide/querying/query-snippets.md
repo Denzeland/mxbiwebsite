@@ -2,7 +2,7 @@
 category: querying
 parent_category: user-guide
 helpscout_url: https://help.redash.io/article/39-query-snippets-shortcuts
-title: Query Snippets
+title: 查询代码段
 slug: query-snippets
 ---
 

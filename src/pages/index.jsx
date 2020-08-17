@@ -28,7 +28,7 @@ class Homepage extends React.Component {
     return (
       <Layout
         title="木星BI平台帮助您理解您的数据"
-        description="Use Redash to connect to any data source (PostgreSQL, MySQL, Redshift, BigQuery, MongoDB and many others), query, visualize and share your data to make your company data driven."
+        description="使用木星BI平台来连接任何数据源 (PostgreSQL, MySQL, Redshift, BigQuery, MongoDB and many others), 查询、可视化和共享您的数据，数据驱动您的公司."
         location={this.props.location}
       >
         <section className="section section__databricks">

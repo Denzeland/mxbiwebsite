@@ -1,7 +1,7 @@
 ---
 category: querying
 parent_category: user-guide
-title: Favorites & Tagging
+title: 收藏夹 & 标签
 slug: favorites-tagging
 
 # -----------------------------

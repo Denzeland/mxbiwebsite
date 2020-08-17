@@ -1,7 +1,7 @@
 {
   "name": "redash-website",
   "version": "1.0.0",
-  "description": "Redash Website & Knowledge Base",
+  "description": "木星BI平台网站 & 知识文档",
   "main": "n/a",
   "dependencies": {
     "algoliasearch": "^3.32.0",

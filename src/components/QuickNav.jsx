@@ -66,7 +66,7 @@ class QuickNav extends React.Component {
         <div className="panel panel-default">
           <div className="panel-body">
             <p className="text-uppercase mt-0">
-              <b>QUICK NAV</b>
+              <b>快速导航</b>
             </p>
             <hr className="hr--sm" />
             <ul

@@ -2,36 +2,38 @@
 category: querying
 parent_category: user-guide
 helpscout_url: https://help.redash.io/article/152-query-results-data-source
-title: Querying Existing Query Results
+title: 查询已经存在的查询结果
 slug: query-results-data-source
 order: 2
 ---
 
-The **Query Results Data Source** (QRDS) lets you run queries against results from your other Data Sources. Use it to join data from multiple databases or perform post-processing. Redash uses an in-memory SQLite database to make this possible. As a result, queries against large result sets may fail if Redash runs out of memory. 
+**查询结果数据源** (一下简称QRDS)允许您对来自其他数据源的结果运行查询。使用它来连接来自多个数据库的数据或执行后处理。木星BI平台使用内存中的SQLite数据库来实现这一点。因此，如果木星BI平台耗尽内存，对大型结果集的查询可能会失败。
 
 {% callout warning %}
 
-The QRDS doesn't work with results from queries that use [parameters](/help/user-guide/querying/query-parameters). If you try it you'll see `Error running query: Failed loading results from query id xxxx`. Remove the parameters from `query_xxxx` to fix the error.
+QRDS不适用于使用[参数]的查询结果。如果你尝试它，你会看到`运行查询出错:从查询id xxxx加载失败的结果`。从`query_xxxx`中删除参数以修复错误。
 
 {% endcallout %}
 
-### Setup
-You can enable **Query Results** under the `Data Source` tab of the settings menu. Setup is easy: just provide a name for the source. 
+### 初始化
+
+您可以在`设置`菜单的`数据源`选项卡下启用**查询结果**。设置很简单:只需为数据源提供一个名称。
 
 ![](/assets/images/docs/gitbook/query-results-setup.png)
 
-This is the name that will appear in the source dropdown on the left of the query editor. The data source is called **Query Results** in the below screenshot.
+
+这个名称将出现在查询编辑器左侧的数据源下拉列表中。在下面的截图中，数据源被称为**查询结果**。
 
 ![](/assets/images/docs/gitbook/query-results-example.png)
 
 {% callout info %}
 
-Most organizations only require **one** Query Results data source.
+大多数组织只需要**一个**查询结果数据源。
 {% endcallout %}
 
 
 ### Querying
-The QRDS accepts [SQLite query syntax](https://sqlite.org/lang.html):
+QRDS也支持[SQLite查询语法](https://sqlite.org/lang.html):
 
 ```
 SELECT
@@ -42,14 +44,14 @@ JOIN query_456 AS b
   		ON a.id = b.id
 ```
 
-Your other queries are like "tables" to the QRDS. Each one is aliased as `query_` followed by its `query_id` which you can see in the URL bar of your browser from the query editor. For example, a query at `/queries/49588` has the alias `query_49588`.
+您的其他查询类似于QRDS的“表”。每个查询器的别名都是`query_`，后面跟着它的`query_id`，你可以在浏览器的URL栏从查询编辑器中看到。例如，`/queries/49588`上的查询具有别名`query_49588`。
 
 {% callout warning %}
-The query alias like `query_49588` _must_ appear on the same line as its associated `FROM` or `JOIN` keyword.
+查询别名比如`query_49588` _must_与它关联的`FROM`或`JOIN`关键字出现在同一行。
 {% endcallout %}
 
-### Cached Query Results
-When you query the **Query Results Data Source**, Redash executes the underlying queries first. This guarantees recent results in case you [schedule a QRDS query](/help/user-guide/querying/scheduling-a-query). You can speed up QRDS queries by using `cached_query_` for your query aliases instead of `query_`. This tells Redash to use the cached results from the most recent execution of a given query. This improves performance by using older data. You can mix both syntaxes in the same query too:
+### 缓存查询结果
+当您查询**查询结果数据源**时，木星BI首先执行底层查询。如果您[定期更新一个QRDS查询](/help/user-guide/querying/scheduling-a-query)，这保证了最近的结果。你可以为你的查询别名使用`cached_query_`而不是`query_`来加速QRDS查询。这告诉木星BI平台使用来自给定查询最近执行的缓存结果。这可以通过使用旧数据来提高性能。你也可以在同一个查询中混合使用这两种语法:
 
 ```
 SELECT
@@ -60,7 +62,8 @@ JOIN query_456 AS b
   		ON a.id = b.id
 ```
 
-### Query Results Permissions
-Access to the **Query Results Data Source** is governed by the groups it's associated with [like any other Data Source](/help/user-guide/users/permissions-groups). But Redash will also check if a user has permission to execute queries on the Data Sources the original queries use.
+### 查询结果的权限
+对**查询结果数据源**的访问由与之关联的组管理[与任何其他数据源一样](/help/user-guide/users/permissions-groups).但是木星BI还会检查用户是否有权限在原始查询使用的数据源上执行查询。
 
-As an example, a user with access to the QRDS cannot execute `SELECT * FROM query_123` if query `123` uses a data source to which that user does not have access. They will see the most recently cached QRDS query result from the query screen in Redash. But they will not be able to execute the query again.
+
+例如，如果查询`123`使用了该用户无法访问的数据源，那么具有QRDS访问权的用户就不能执行`SELECT * FROM query_123`。他们将从木星BI的查询屏幕中看到最近缓存的QRDS查询结果。但是它们将不能再次执行查询。

@@ -3,10 +3,9 @@ category: querying
 parent_category: user-guide
 helpscout_url: https://help.redash.io/article/44-query-parameters
 keywords:
-  - variable
-  - variables
-  - template
-title: Query Parameters
+  - 变量
+  - 模板
+title: 查询参数
 slug: query-parameters
 toc: true
 order: 3
