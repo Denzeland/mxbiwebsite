@@ -1,32 +1,25 @@
 ---
 category: visualizations
 parent_category: user-guide
-title: Visualizations How To
+title: 如何可视化数据
 toc: true
 order: 1
 slug: visualizations-how-to
 ---
 
-## Create a New Visualization
+## 创建一个新的可视化
 
-Once your query has finished running for the first time, you can add a
-visualization by clicking the “New Visualization” button above the results
-table.
+一旦您的查询完成第一次运行，您就可以通过单击结果表上方的`添加可视化`按钮来添加可视化。
 
 ![](/assets/images/docs/gitbook/new-viz.png)
 
-## Edit A Visualization
+## 编辑可视化
 
-You can modify the settings of an existing visualization from the query editor
-screen. Click the visualization on the tab bar and you'll see an
-`Edit Visualization` option beneath each visualization. Clicking it will open
-the current settings for that visualization (type, X axis, Y axis, groupings
-etc.). Hit "Save" to apply your changes or "Cancel" to leave no trace.
+您可以从查询编辑器屏幕修改现有可视化的设置。单击选项卡栏上的可视化，您将在每个可视化下面看到一个`编辑可视化`选项。单击它将打开该可视化的当前设置(类型、X轴、Y轴、分组等)。点击“保存”来应用你的更改，或者点击“取消”不留下任何痕迹。
 
-## Embedding Visualizations
+## 嵌入可视化
 
-It's easy to embed Redash visualizations. Just click the elipsis button beneath
-any visualization to show further options and select `Embed Elsewhere`.
+在其他应用嵌入木星BI可视化很容易。只需单击任何可视化下面的省略号按钮，以显示更多的选项，并选择`嵌入到其他地方`。
 
 <img src="/assets/images/docs/gitbook/embed-viz.png" width="60%">
 

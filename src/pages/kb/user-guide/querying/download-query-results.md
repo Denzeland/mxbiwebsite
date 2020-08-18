@@ -8,17 +8,18 @@ slug: download-query-results
 
 # How to download a query result
 
-Visit any query page and click the vertical ellipsis (`⋮`) button beneath the results pane. Then choose to download a CSV, TSV, or Excel file. This action downloads the current query result.
+访问任何查询页面并单击垂直省略号按钮(`⋮`)在结果窗口。然后选择下载CSV、TSV或Excel文件。此操作下载当前查询结果。
 
 <img src="/assets/images/docs/gitbook/download-dataset.png">
 
-# How to get latest results via the API
+# 如何通过API获得最新的结果
 
-Visit any query page and click the horizontal ellipsis (`…`) above the query editor. Then choose **Show API Key**. The links in the modal that appears always point to the latest query result. You can choose between CSV and JSON formats to be returned by the API call.
+访问任何查询页面并点击查询编辑器上面的水平省略号(`…`)。然后选择**显示API密钥**。出现在模态框中的链接总是指向最新的查询结果。您可以选择API调用返回的CSV和JSON格式。
 
 {% callout info %}
 
 It's not shown in the interface, but you can also get the Excel format by changing the file type suffix from `json`/`csv` to `xlsx`.
+它没有显示在界面中，但你也可以通过改变文件类型后缀`json` / `csv`到`xlsx`得到Excel格式。
 
 {% endcallout %}
 
@@ -26,7 +27,7 @@ It's not shown in the interface, but you can also get the Excel format by changi
 
 {% callout warning %}
 
-The latest results API is not supported for queries that use parameters.
+使用参数的查询不支持最新的结果API。
 
 {% endcallout %}
 

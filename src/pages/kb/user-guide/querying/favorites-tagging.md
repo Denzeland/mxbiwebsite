@@ -17,21 +17,21 @@ slug: favorites-tagging
 # dashboards directory.
 ---
 
-Redash users write a lot of queries and dashboards! Favorites and Tagging are here to make finding them easy as your collection of queries and dashboards grows from a few hundred to a few thousand.
+木星BI平台用户编写了大量的查询和仪表！收藏夹和标签可以让你在查询和仪表盘从几百个增加到几千个的时候轻松找到它们。
 
 <img src="/assets/images/docs/gitbook/favorites-example.png" width="100%">
 
-## Favorites
-You can favorite a dashboard or query by clicking the star to the left of its title anywhere in Redash. The star will turn yellow to indicate success. Your favorites are displayed at several places in Redash. They appear on the homepage, in the navbar dropdown menus and as filters in the query or dashboard list views.
+## 收藏夹
+你可以在木星BI的任何地方通过点击标题左边的星号来收藏仪表盘或查询。星星会变成黄色，表示成功。你的收藏会在木星BI的几个地方显示。它们会出现在主页、导航栏下拉菜单中，并在查询或仪表板列表视图中作为过滤器出现。
 
 
-## Tagging
-You can tag queries and queries by subject matter, location, user or any parameter that is meaningful to your organization. Tags are added from the query editor or the dashboard editor. Hover your mouse on the query or dashboard title and an `+Add Tag` button will appear. In the modal that appears you can select as many tags as you need. The modal will suggest previously-used tags as you type. Hit `Save` when you're finished or `Esc` to abort tagging.
+## 添加标签
+您可以根据主题、位置、用户或对组织有意义的任何参数对查询进行标记。从查询编辑器或仪表板编辑器添加标记。将鼠标悬停在查询或仪表板标题上，将出现一个`+添加标签`按钮。在出现的模式中，您可以选择您需要的标签。模态会在你输入时提示你以前使用过的标签。当你完成时按`保存`或`Esc`中止标记。
 
 {% callout info %}
-It's important to have predictable taxonomy for your tags. Consistency in this area makes using Redash an even nicer experience and helps bring new users onboard. So we recommend that your team have an internal discussion about the tag hierarchy that will be most benefecial to your organization.
+为标记提供可预测的分类是很重要的。在这方面的一致性使得使用木星BI有更好的体验，并有助于吸引新用户。因此，我们建议您的团队对对您的组织最有利的标签层次结构进行一次内部讨论。
 {% endcallout %}
 
 <img src="/assets/images/docs/gitbook/tagging-example.png" width="100%">
 
-Your tags will appear on the Dashboard and Query list views on the righthand side. Click any tag to filter the list view instantly. Click a second time to remove the filter. `Shift + Click` to select multiple filters.
+您的标记将出现在仪表板和查询列表视图的右手边。单击任何标记立即筛选列表视图。再次单击以删除过滤器。`Shift + Click`选择多个滤镜。

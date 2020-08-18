@@ -6,11 +6,11 @@ title: 查询过滤
 slug: query-filters
 ---
 
-Query Filters let you interactively reduce the amount of data shown in your visualizations, similar to Query Parameters but with a few key differences. Query Filters limit data **after** it has been loaded into your browser. This makes them ideal for smaller datasets and environments where query executions are time-consuming, rate-limited, or costly.
+查询过滤器允许您以交互方式减少可视化中显示的数据量，这与查询参数类似，但有一些关键的区别。查询过滤器限制数据后，已加载到您的浏览器。这使得它们非常适合于较小的数据集和查询执行耗时、速率受限或成本高昂的环境。
 
 ## Usage
 
-Unlike Query Parameters there isn't a button to add a filter. Instead, if you want to focus on a specific value, just alias your column to `<columnName>::filter`. Here's an example:
+与查询参数不同，木星BI平台没有添加过滤器的按钮。相反，如果您想要关注一个特定的值，只需将您的列别名为`<columnName>::filter`。这里有一个例子:
 
 ```
 SELECT action AS "action::filter", COUNT(0) AS "actions count"
@@ -19,14 +19,13 @@ GROUP BY action
 ```
 
 {% callout %}
-Note that you can use `__filter` or `__multiFilter`, (double underscore
-instead of double quotes) if your database doesn’t support :: in column names
-(such as BigQuery).
+请注意，您可以使用 `__filter` 或 `__multiFilter`(双下划线而不是双引号)，如果你的数据库列名不支持::
 {% endcallout %}
 
 ![](/assets/images/docs/gitbook/filter_example_action_create.png)
 
 If you need a multi-select filter then alias your column to `<columnName>::multi-filter`.
+如果您需要一个多选择过滤器，可以给你的列名取一个别名`<columnName>::multi-filter`。
 
 ```
 SELECT action AS "action::multi-filter", COUNT (0) AS "actions count"
@@ -36,8 +35,8 @@ GROUP BY action
 
 ![](/assets/images/docs/gitbook/multifilter_example.png)
 
-You can use Query Filters on dashboards too. By default, the filter widget will appear beside each visualization where the filter has been added to the query. If you'd like to link together the filter widgets into a dashboard-level Query Filter see [these instructions]({% link _kb/user-guide/dashboards/dashboard-editing.md %}).
+您也可以在仪表板上使用查询过滤器。默认情况下，过滤器小部件将出现在将筛选器添加到查询中的每个可视化页面的旁边。如果您想要将这些过滤器小部件链接到一个仪表板级别的查询过滤器中，请参阅[这些说明]({% link _kb/user-guide/dashboards/dashboard-editing.md %}).
 
-## Limitations
+## 局限性
 
-Query Filters aren't suitable for especially large data sets or query results with hundreds or thousands of distinct field values. Depending on your computer and browser configuration, excessive data can deteriorate the user experience.
+查询过滤器不适合特别大的数据集或具有数百或数千个不同字段值的查询结果。根据您的计算机和浏览器配置，过多的数据可能会恶化用户体验。
